@@ -99,9 +99,6 @@ def pscore():
             else:
                 count[labels[label]] += 1
                 count[-1] += 1
-                print(count[0])
-                print(count[1])
-                print("hahah")
         pos_dict[locations] = (count[0]/count[-1] - count[1]/count[-1] + 1)/2
         #I will do the json file as well here
         input = []
