@@ -2,7 +2,7 @@ import csv
 from twitter_specials import *
 
 word_counts_dict = {}
-with open("labeled_corpus.tsv", encoding="utf-8") as csvfile:
+with open("data/labeled_corpus.tsv", encoding="utf-8") as csvfile:
     readCSV = csv.reader(csvfile, delimiter='\t')
     for row in readCSV:
         line_arr = list(row)
